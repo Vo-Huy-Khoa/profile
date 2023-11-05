@@ -223,9 +223,24 @@ section.resume-section .resume-item .resume-date {
 ====================================================*/
 #about {
     background-image: url(../img/bg-avatar.png);
-    /* background-size: cover; */
+    background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+    #about {
+        background-image: url(../img/bg-avatar.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        padding: 40px 0 !important;
+    }
+
+    .avatar {
+        display: none;
+        width: 100px !important;
+        height: 100px !important;
+    }
 }
 
 #about h1 {
